@@ -1,79 +1,89 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="sw" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
     <title>Abel Alen Siso | Portfolio</title>
-    <link rel="stylesheet" href="p.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="p.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="hero-section">
-            <div class="hero-text">
-                <h1 class="name">Abel Alen Siso</h1>
-                <p class="bio">Software Developer, UI Designer, and Music Producer. Nimejikita katika kutengeneza mifumo bora ya kidijitali kutatua changamoto za kijamii.</p>
-                <div class="social-links">
-                    <a href="mailto:abelsiso2002@gmail.com">Email</a> /
-                    <a href="#">GitHub</a> /
-                    <a href="#">LinkedIn</a>
+    <div class="page">
+        <header id="site_header" class="header">
+            <div class="header-content">
+                <div class="header-photo">
+                    <img src="abel.jpg" alt="Abel Alen Siso">
+                </div>
+                <div class="header-titles">
+                    <h2>Abel Alen Siso</h2>
+                    <h4>Software Developer</h4>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="abel.jpg" alt="Abel Alen Siso" class="profile-img">
+
+            <ul class="main-menu">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="header-buttons">
+                <a href="Abel Developer Resume.pdf" target="_blank" class="btn-cv">Download CV</a>
             </div>
         </header>
 
-        <nav class="main-nav">
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-        </nav>
-
-        <main>
-            <section id="projects">
-                <h2 class="section-label">Selected Projects</h2>
+        <div class="content-area">
+            <div class="sections">
                 
-                <div class="project-row">
-                    <span class="date">2024</span>
-                    <div class="content">
-                        <h3 class="title">Car Sales Web Application</h3>
-                        <p>Mfumo unaounganisha wauzaji na wateja wa magari moja kwa moja.</p>
+                <section id="about-me" class="section">
+                    <div class="page-title">
+                        <h2>About <span>Me</span></h2>
                     </div>
-                </div>
-
-                <div class="project-row">
-                    <span class="date">2023</span>
-                    <div class="content">
-                        <h3 class="title">Music Booking Platform</h3>
-                        <p>Application ya usimamizi wa studio na kurahisisha booking za wasanii.</p>
+                    <div class="row">
+                        <div class="text-col">
+                            <p>Mimi ni Software Developer mwenye uzoefu wa miaka miwili. Ninajikita katika Full-stack development, nikitengeneza user-friendly interfaces na mifumo imara ya backend (Robust Systems).</p>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="project-row">
-                    <span class="date">2023</span>
-                    <div class="content">
-                        <h3 class="title">Geolocation Attendance System</h3>
-                        <p>Mfumo wa mahudhurio unaotumia GPS kuhakiki eneo la mfanyakazi.</p>
+                <section id="resume" class="section">
+                    <div class="page-title">
+                        <h2>Resume</h2>
                     </div>
-                </div>
-            </section>
-
-            <section id="education">
-                <h2 class="section-label">Education</h2>
-                <div class="project-row">
-                    <span class="date">2020-2022</span>
-                    <div class="content">
-                        <h3 class="title">B.Sc. in Computer Engineering & IT</h3>
-                        <p>UAUT University, Tanzania. GPA: 4.0</p>
+                    <div class="timeline">
+                        <h3>Education</h3>
+                        <div class="timeline-item">
+                            <div class="left-part">
+                                <h5 class="item-period">2020-2024</h5>
+                                <span class="item-company">UAUT University</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                                <h4 class="item-title">B.Sc in Computer Engineering & IT</h4>
+                                <p>Nimesomea mambo ya System Administration, Engineering na IT nikipata GPA ya 4.0.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
 
-        <footer>
-            <p>© 2026 Abel Siso — Dar es Salaam, Tanzania</p>
-        </footer>
+                <section id="portfolio" class="section">
+                    <div class="page-title">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h4>Car Sales Web App</h4>
+                            <p>Mfumo wa kuuza na kununua magari mtandaoni.</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Music Booking Platform</h4>
+                            <p>Mfumo wa kuratibu booking za wasanii na studio.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
