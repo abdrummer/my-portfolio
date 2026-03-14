@@ -1,139 +1,101 @@
 :root {
-    --bg: #000000;
+    --bg: #0b0b0b;
     --text: #ffffff;
-    --secondary: #888888;
-    --hover: #555555;
-    --accent: #ffffff;
+    --dim: #888888;
+    --border: #222222;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    padding: 60px 20px;
 }
 
-.container {
-    max-width: 650px;
-    margin: 80px auto;
-    padding: 0 20px;
+.container { max-width: 750px; margin: 0 auto; }
+
+/* Mpangilio wa Juu (Hero) */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 50px;
 }
 
-/* Header */
-header {
-    margin-bottom: 40px;
+.hero-text { flex: 2; }
+.hero-image { flex: 1; text-align: right; }
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px; /* Kona zilizopinda kidogo kama picha ulioituma */
+    object-fit: cover;
+    filter: grayscale(20%); /* Inaleta muonekano wa pro */
 }
 
-.name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.bio {
-    color: var(--secondary);
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-}
+.name { font-size: 1.8rem; font-weight: 600; margin-bottom: 12px; }
+.bio { color: var(--dim); font-size: 1rem; margin-bottom: 20px; }
 
 .social-links a {
     color: var(--text);
     text-decoration: none;
     font-size: 0.9rem;
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--dim);
 }
 
-.social-links a:hover {
-    border-bottom: 1px solid var(--accent);
-}
-
-/* Navigation */
-nav {
+/* Navigational Links */
+.main-nav {
     margin-bottom: 60px;
-    border-bottom: 1px solid #222;
-    padding-bottom: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
 }
 
-nav a {
-    color: var(--secondary);
+.main-nav a {
+    color: var(--dim);
     text-decoration: none;
-    margin-right: 25px;
+    margin-right: 30px;
     font-size: 0.9rem;
-    font-weight: 500;
 }
 
-nav a:hover {
-    color: var(--text);
-}
-
-/* Sections */
-.section-title {
-    font-size: 0.8rem;
+/* Miradi na Education */
+.section-label {
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--secondary);
+    letter-spacing: 2px;
+    color: var(--dim);
     margin-bottom: 30px;
 }
 
-.list-item {
-    margin-bottom: 35px;
-}
-
-.item-header {
+.project-row {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
+    gap: 40px;
 }
 
-.item-title {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.item-title a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-.item-year {
-    color: var(--secondary);
-    font-size: 0.85rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.item-desc {
-    color: var(--secondary);
+.date {
+    min-width: 80px;
+    color: var(--dim);
     font-size: 0.9rem;
-    max-width: 90%;
 }
 
-/* Footer */
+.title { font-size: 1.05rem; font-weight: 500; margin-bottom: 4px; }
+.content p { color: var(--dim); font-size: 0.95rem; }
+
 footer {
-    margin-top: 100px;
+    margin-top: 80px;
+    border-top: 1px solid var(--border);
     padding-top: 20px;
-    border-top: 1px solid #222;
+    color: var(--dim);
     font-size: 0.8rem;
-    color: var(--secondary);
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-    .container {
-        margin: 40px auto;
-    }
-    .item-header {
-        flex-direction: column;
-    }
-    .item-year {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+/* Kwa ajili ya Simu */
+@media (max-width: 600px) {
+    .hero-section { flex-direction: column-reverse; text-align: left; }
+    .hero-image { text-align: left; margin-bottom: 20px; }
+    .project-row { flex-direction: column; gap: 5px; }
 }
