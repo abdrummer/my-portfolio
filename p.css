@@ -1,101 +1,84 @@
 :root {
-    --bg: #0b0b0b;
-    --text: #ffffff;
-    --dim: #888888;
-    --border: #222222;
+    --primary-color: #007bff;
+    --bg-dark: #222;
+    --sidebar-bg: #444;
+    --text-white: #ffffff;
+    --text-gray: #bbb;
 }
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
     font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    padding: 60px 20px;
+    background-color: #111;
+    color: var(--text-white);
+    margin: 0;
 }
 
-.container { max-width: 750px; margin: 0 auto; }
+.page { display: flex; }
 
-/* Mpangilio wa Juu (Hero) */
-.hero-section {
+/* Sidebar */
+.header {
+    width: 280px;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    position: fixed;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #555;
+}
+
+.header-titles h2 { margin-top: 15px; font-size: 1.4rem; }
+.header-titles h4 { color: var(--text-gray); font-weight: 300; }
+
+.main-menu { list-style: none; margin-top: 40px; }
+.main-menu li { margin-bottom: 20px; }
+.main-menu a { color: var(--text-white); text-decoration: none; font-size: 1rem; }
+
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--text-white);
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+/* Content */
+.content-area {
+    margin-left: 280px;
+    padding: 50px;
+    width: 100%;
+}
+
+.section { margin-bottom: 80px; }
+.page-title h2 { font-size: 2.5rem; margin-bottom: 30px; }
+.page-title span { color: var(--primary-color); }
+
+/* Timeline Style */
+.timeline-item {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.hero-text { flex: 2; }
-.hero-image { flex: 1; text-align: right; }
-
-.profile-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 12px; /* Kona zilizopinda kidogo kama picha ulioituma */
-    object-fit: cover;
-    filter: grayscale(20%); /* Inaleta muonekano wa pro */
-}
-
-.name { font-size: 1.8rem; font-weight: 600; margin-bottom: 12px; }
-.bio { color: var(--dim); font-size: 1rem; margin-bottom: 20px; }
-
-.social-links a {
-    color: var(--text);
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-bottom: 1px solid var(--dim);
-}
-
-/* Navigational Links */
-.main-nav {
-    margin-bottom: 60px;
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-}
-
-.main-nav a {
-    color: var(--dim);
-    text-decoration: none;
-    margin-right: 30px;
-    font-size: 0.9rem;
-}
-
-/* Miradi na Education */
-.section-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--dim);
     margin-bottom: 30px;
 }
 
-.project-row {
-    display: flex;
-    margin-bottom: 35px;
-    gap: 40px;
+.left-part { width: 150px; color: var(--text-gray); }
+.divider {
+    width: 2px;
+    background-color: var(--primary-color);
+    margin: 0 20px;
+    position: relative;
 }
 
-.date {
-    min-width: 80px;
-    color: var(--dim);
-    font-size: 0.9rem;
-}
+.right-part h4 { color: var(--primary-color); }
 
-.title { font-size: 1.05rem; font-weight: 500; margin-bottom: 4px; }
-.content p { color: var(--dim); font-size: 0.95rem; }
-
-footer {
-    margin-top: 80px;
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-    color: var(--dim);
-    font-size: 0.8rem;
-}
-
-/* Kwa ajili ya Simu */
-@media (max-width: 600px) {
-    .hero-section { flex-direction: column-reverse; text-align: left; }
-    .hero-image { text-align: left; margin-bottom: 20px; }
-    .project-row { flex-direction: column; gap: 5px; }
+/* Simu */
+@media (max-width: 768px) {
+    .page { flex-direction: column; }
+    .header { width: 100%; height: auto; position: relative; }
+    .content-area { margin-left: 0; }
 }
