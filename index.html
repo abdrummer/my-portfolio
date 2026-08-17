@@ -1,89 +1,1771 @@
+```html
 <!DOCTYPE html>
-<html lang="sw" class="no-js">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Abel Alen Siso | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="p.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Abel Alen Siso — Software Developer, Full-Stack Developer and Mobile Application Developer from Tanzania.">
+
+    <meta name="author"
+          content="Abel Alen Siso">
+
+    <meta name="keywords"
+          content="Abel Siso, Software Developer, Full Stack Developer, Flutter Developer, Tanzania, React, Laravel, Django, Python, Java">
+
+    <meta name="theme-color"
+          content="#0a0a0f">
+
+    <title>Abel Alen Siso | Software Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="p.css">
 </head>
+
 <body>
-    <div class="page">
-        <header id="site_header" class="header">
-            <div class="header-content">
-                <div class="header-photo">
-                    <img src="abel.jpg" alt="Abel Alen Siso">
-                </div>
-                <div class="header-titles">
-                    <h2>Abel Alen Siso</h2>
-                    <h4>Software Developer</h4>
-                </div>
-            </div>
 
-            <ul class="main-menu">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- =====================================================
+     SCROLL PROGRESS
+===================================================== -->
 
-            <div class="header-buttons">
-                <a href="Abel Developer Resume.pdf" target="_blank" class="btn-cv">Download CV</a>
-            </div>
-        </header>
+<div class="scroll-progress">
+    <div id="progress-bar"></div>
+</div>
 
-        <div class="content-area">
-            <div class="sections">
-                
-                <section id="about-me" class="section">
-                    <div class="page-title">
-                        <h2>About <span>Me</span></h2>
-                    </div>
-                    <div class="row">
-                        <div class="text-col">
-                            <p>Mimi ni Software Developer mwenye uzoefu wa miaka miwili. Ninajikita katika Full-stack development, nikitengeneza user-friendly interfaces na mifumo imara ya backend (Robust Systems).</p>
-                        </div>
-                    </div>
-                </section>
 
-                <section id="resume" class="section">
-                    <div class="page-title">
-                        <h2>Resume</h2>
-                    </div>
-                    <div class="timeline">
-                        <h3>Education</h3>
-                        <div class="timeline-item">
-                            <div class="left-part">
-                                <h5 class="item-period">2020-2026</h5>
-                                <span class="item-company">UAUT University</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                                <h4 class="item-title">B.Sc in Computer Engineering & IT</h4>
-                                <p>Nimesomea mambo ya System Administration, Engineering na IT nikipata GPA ya 4.0.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
 
-                <section id="portfolio" class="section">
-                    <div class="page-title">
-                        <h2>Portfolio</h2>
-                    </div>
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <h4>Car Sales Web App</h4>
-                            <p>Mfumo wa kuuza na kununua magari mtandaoni.</p>
-                        </div>
-                        <div class="project-card">
-                            <h4>Music Booking Platform</h4>
-                            <p>Mfumo wa kuratibu booking za wasanii na studio.</p>
-                        </div>
-                    </div>
-                </section>
+<div class="background-effects">
 
-            </div>
+    <div class="glow glow-one"></div>
+
+    <div class="glow glow-two"></div>
+
+    <div class="grid-background"></div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home"
+           class="logo">
+
+            <span class="logo-symbol">&lt;/&gt;</span>
+
+            <span>Abel<span class="logo-dot">.</span></span>
+
+        </a>
+
+
+        <nav class="nav-menu"
+             id="nav-menu">
+
+            <a href="#home"
+               class="nav-link active">
+                Home
+            </a>
+
+            <a href="#about"
+               class="nav-link">
+                About
+            </a>
+
+            <a href="#experience"
+               class="nav-link">
+                Experience
+            </a>
+
+            <a href="#skills"
+               class="nav-link">
+                Skills
+            </a>
+
+            <a href="#projects"
+               class="nav-link">
+                Projects
+            </a>
+
+            <a href="#contact"
+               class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button id="theme-toggle"
+                    class="icon-button"
+                    aria-label="Toggle theme">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <a href="Abel Developer Resume.pdf"
+               target="_blank"
+               class="nav-cv">
+
+                <i class="fa-solid fa-download"></i>
+
+                CV
+
+            </a>
+
+
+            <button id="menu-toggle"
+                    class="menu-toggle"
+                    aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
         </div>
+
     </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home"
+         class="hero section">
+
+    <div class="container hero-container">
+
+
+        <div class="hero-content">
+
+
+            <div class="availability">
+
+                <span class="status-dot"></span>
+
+                Available for opportunities
+
+            </div>
+
+
+            <p class="hero-small-title">
+
+                HELLO, I'M
+
+            </p>
+
+
+            <h1>
+
+                Abel Alen
+
+                <span>Siso</span>
+
+            </h1>
+
+
+            <div class="hero-role">
+
+                <span>I build</span>
+
+                <span id="typing-text"></span>
+
+                <span class="typing-cursor">|</span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Software Developer focused on building modern web
+                applications, mobile solutions and reliable backend
+                systems that solve real-world problems.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects"
+                   class="btn btn-primary">
+
+                    View My Work
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="#contact"
+                   class="btn btn-outline">
+
+                    Let's Talk
+
+                    <i class="fa-regular fa-paper-plane"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-socials">
+
+                <a href="https://github.com/abdrummer"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="mailto:joasadayabel@gmail.com"
+                   aria-label="Email">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+
+            <div class="code-window">
+
+
+                <div class="window-header">
+
+                    <div class="window-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <span class="window-title">
+                        abel.dev
+                    </span>
+
+                </div>
+
+
+                <div class="code-content">
+
+                    <div>
+                        <span class="code-purple">const</span>
+                        <span class="code-blue">developer</span>
+                        =
+                        <span class="code-yellow">{</span>
+                    </div>
+
+
+                    <div class="code-indent">
+
+                        <span class="code-blue">
+                            name
+                        </span>:
+
+                        <span class="code-green">
+                            "Abel Siso"
+                        </span>,
+
+                    </div>
+
+
+                    <div class="code-indent">
+
+                        <span class="code-blue">
+                            location
+                        </span>:
+
+                        <span class="code-green">
+                            "Tanzania"
+                        </span>,
+
+                    </div>
+
+
+                    <div class="code-indent">
+
+                        <span class="code-blue">
+                            role
+                        </span>:
+
+                        <span class="code-green">
+                            "Software Developer"
+                        </span>,
+
+                    </div>
+
+
+                    <div class="code-indent">
+
+                        <span class="code-blue">
+                            stack
+                        </span>:
+
+                        <span class="code-yellow">
+                            [
+                        </span>
+
+                        <span class="code-green">
+                            "Flutter",
+                        </span>
+
+                        <span class="code-green">
+                            "React",
+                        </span>
+
+                        <span class="code-green">
+                            "Django"
+                        </span>
+
+                        <span class="code-yellow">
+                            ]
+                        </span>,
+
+                    </div>
+
+
+                    <div class="code-indent">
+
+                        <span class="code-blue">
+                            passion
+                        </span>:
+
+                        <span class="code-green">
+                            "Building"
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="code-yellow">
+                            };
+                        </span>
+
+                    </div>
+
+
+                    <div class="code-comment">
+
+                        // turning ideas into software.
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-one">
+
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+
+                    <strong>Full-Stack</strong>
+
+                    <span>Development</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-two">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+                <div>
+
+                    <strong>Mobile</strong>
+
+                    <span>Flutter Apps</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-down">
+
+        <span>Scroll to explore</span>
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about"
+         class="section about-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                01
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    ABOUT ME
+                </span>
+
+                <h2>
+                    Turning ideas into
+                    <span>digital solutions.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-image">
+
+                <div class="image-frame">
+
+                    <img src="abel.jpg"
+                         alt="Abel Alen Siso">
+
+                    <div class="image-overlay"></div>
+
+                </div>
+
+
+                <div class="experience-badge">
+
+                    <strong>4+</strong>
+
+                    <span>
+                        Years of<br>
+                        IT experience
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h3>
+                    Software Developer & Technology Enthusiast
+                </h3>
+
+
+                <p>
+                    I am Abel Alen Siso, a Software Developer and
+                    Computer Engineering & Information Technology
+                    graduate from United African University of Tanzania.
+                </p>
+
+
+                <p>
+                    I specialize in developing web applications,
+                    mobile applications, backend systems and database
+                    solutions. My goal is to create technology that is
+                    practical, scalable, secure and easy to use.
+                </p>
+
+
+                <p>
+                    I enjoy working across the entire development
+                    lifecycle — from understanding a problem and
+                    designing the solution to development, testing,
+                    deployment and maintenance.
+                </p>
+
+
+                <div class="about-details">
+
+
+                    <div>
+
+                        <span>Location</span>
+
+                        <strong>
+                            Dar es Salaam, Tanzania
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Education</span>
+
+                        <strong>
+                            B.Sc. Computer Engineering & IT
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Focus</span>
+
+                        <strong>
+                            Full-Stack & Mobile Development
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <strong>
+                            joasadayabel@gmail.com
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#contact"
+                   class="text-link">
+
+                    More about me
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience"
+         class="section experience-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                02
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    EXPERIENCE
+                </span>
+
+                <h2>
+                    My professional
+                    <span>journey.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <!-- Amplio -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    2026 — Present
+                </div>
+
+
+                <div class="timeline-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="company">
+                        Amplio
+                    </span>
+
+                    <h3>
+                        ICT / Software Professional
+                    </h3>
+
+                    <p>
+                        Working with Amplio on the FAO project,
+                        contributing to technology-related activities,
+                        digital solutions and information systems.
+                    </p>
+
+                    <div class="tag-list">
+
+                        <span>Technology</span>
+                        <span>Digital Solutions</span>
+                        <span>ICT</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Kinondoni -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    2025
+                </div>
+
+
+                <div class="timeline-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="company">
+                        Kinondoni Municipal Council
+                    </span>
+
+                    <h3>
+                        ICT / Network Support
+                    </h3>
+
+                    <p>
+                        Participated in LAN configuration, network
+                        troubleshooting, VLAN configuration, DHCP,
+                        CCTV systems and ICT technical support.
+                    </p>
+
+                    <div class="tag-list">
+
+                        <span>Networking</span>
+                        <span>VLAN</span>
+                        <span>DHCP</span>
+                        <span>CCTV</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Lycus -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    2024
+                </div>
+
+
+                <div class="timeline-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="company">
+                        Lycus Technology
+                    </span>
+
+                    <h3>
+                        Software / IT Experience
+                    </h3>
+
+                    <p>
+                        Gained practical experience in software
+                        development, information technology and
+                        technology-based solutions.
+                    </p>
+
+                    <div class="tag-list">
+
+                        <span>Software</span>
+                        <span>IT</span>
+                        <span>Development</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- RITA -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    2023
+                </div>
+
+
+                <div class="timeline-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="company">
+                        RITA
+                    </span>
+
+                    <h3>
+                        ICT / Software Experience
+                    </h3>
+
+                    <p>
+                        Gained practical experience in information
+                        technology, systems and technical support
+                        within a public-sector environment.
+                    </p>
+
+                    <div class="tag-list">
+
+                        <span>ICT</span>
+                        <span>Systems</span>
+                        <span>Technical Support</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section id="skills"
+         class="section skills-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                03
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    TECHNOLOGIES
+                </span>
+
+                <h2>
+                    Tools I use to
+                    <span>build things.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-layout">
+
+
+            <div class="skills-intro">
+
+                <h3>
+                    My technical toolkit
+                </h3>
+
+                <p>
+                    I work with a range of technologies across
+                    frontend, backend, mobile development,
+                    databases and infrastructure.
+                </p>
+
+                <div class="tech-icons">
+
+                    <div title="Java">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+
+                    <div title="Python">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <div title="JavaScript">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <div title="React">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+
+                    <div title="Node.js">
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+
+                    <div title="Git">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="skills-list">
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Java / Python</span>
+
+                        <span>85%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 85%"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>JavaScript / React</span>
+
+                        <span>82%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 82%"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Flutter / Dart</span>
+
+                        <span>88%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 88%"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Laravel / Django</span>
+
+                        <span>80%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 80%"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>MySQL / PostgreSQL</span>
+
+                        <span>85%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 85%"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Networking & Systems</span>
+
+                        <span>78%</span>
+
+                    </div>
+
+                    <div class="skill-bar">
+
+                        <span style="width: 78%"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="technology-cloud">
+
+            <span>Java</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Django</span>
+            <span>Laravel</span>
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+            <span>SQL Server</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>REST API</span>
+            <span>Networking</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section id="projects"
+         class="section projects-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                04
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    PROJECTS
+                </span>
+
+                <h2>
+                    Selected work &
+                    <span>projects.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 01 -->
+
+            <article class="project-card featured">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    EDUCATION TECHNOLOGY
+                </span>
+
+
+                <h3>
+                    MsomiHub
+                </h3>
+
+
+                <p>
+                    A school management and student performance
+                    monitoring platform designed to connect
+                    administrators, teachers, students and parents.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Flutter</span>
+                    <span>React</span>
+                    <span>PostgreSQL</span>
+                    <span>REST API</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 02 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    EVENT TECHNOLOGY
+                </span>
+
+
+                <h3>
+                    EventHub
+                </h3>
+
+
+                <p>
+                    Event planning and ticketing platform supporting
+                    event creation, registration, QR tickets, venue
+                    management, guest management and analytics.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Flutter</span>
+                    <span>Laravel</span>
+                    <span>PostgreSQL</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 03 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    WEB APPLICATION
+                </span>
+
+
+                <h3>
+                    Car Sales Platform
+                </h3>
+
+
+                <p>
+                    A web-based platform for advertising, discovering
+                    and managing vehicle sales with structured
+                    information and database management.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Web</span>
+                    <span>Database</span>
+                    <span>Backend</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 04 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    MUSIC TECHNOLOGY
+                </span>
+
+
+                <h3>
+                    Music Booking Platform
+                </h3>
+
+
+                <p>
+                    A platform concept for connecting artists, studios
+                    and clients while simplifying booking and service
+                    management.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Web</span>
+                    <span>Booking</span>
+                    <span>Database</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 05 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    FINTECH
+                </span>
+
+
+                <h3>
+                    Digital Payment Integration
+                </h3>
+
+
+                <p>
+                    Payment integration workflows for mobile
+                    applications using REST APIs and Tanzanian
+                    digital payment services.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Flutter</span>
+                    <span>REST API</span>
+                    <span>Payments</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 06 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/abdrummer"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <span class="project-category">
+                    INFRASTRUCTURE
+                </span>
+
+
+                <h3>
+                    Network Infrastructure
+                </h3>
+
+
+                <p>
+                    Practical networking and ICT infrastructure work
+                    involving LAN configuration, VLANs, DHCP, CCTV
+                    systems and troubleshooting.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Networking</span>
+                    <span>VLAN</span>
+                    <span>DHCP</span>
+
+                </div>
+
+
+                <div class="project-arrow">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="projects-footer">
+
+            <a href="https://github.com/abdrummer"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline">
+
+                View More on GitHub
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section class="section education-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                05
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    EDUCATION
+                </span>
+
+                <h2>
+                    Academic
+                    <span>background.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+
+            <div class="education-icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+
+            <div class="education-content">
+
+                <span>
+                    2020 — 2026
+                </span>
+
+                <h3>
+                    Bachelor of Science in Computer Engineering
+                    & Information Technology
+                </h3>
+
+                <h4>
+                    United African University of Tanzania (UAUT)
+                </h4>
+
+                <p>
+                    Academic focus included software development,
+                    databases, networking, system administration,
+                    computer engineering and information technology.
+                </p>
+
+            </div>
+
+
+            <div class="education-result">
+
+                <strong>4.0</strong>
+
+                <span>GPA</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact"
+         class="section contact-section">
+
+    <div class="container">
+
+
+        <div class="contact-card">
+
+
+            <div class="contact-heading">
+
+                <span class="section-label">
+                    CONTACT
+                </span>
+
+                <h2>
+                    Have a project
+                    <span>in mind?</span>
+                </h2>
+
+                <p>
+                    Let's talk about your idea, project,
+                    collaboration or professional opportunity.
+                </p>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+
+                <a href="mailto:joasadayabel@gmail.com"
+                   class="contact-action">
+
+                    <div class="action-icon">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Email me</span>
+
+                        <strong>
+                            joasadayabel@gmail.com
+                        </strong>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+
+                <a href="https://github.com/abdrummer"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-action">
+
+                    <div class="action-icon">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>GitHub</span>
+
+                        <strong>
+                            github.com/abdrummer
+                        </strong>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-action">
+
+                    <div class="action-icon">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>LinkedIn</span>
+
+                        <strong>
+                            Connect with me
+                        </strong>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+
+        <a href="#home"
+           class="logo">
+
+            <span class="logo-symbol">&lt;/&gt;</span>
+
+            Abel<span class="logo-dot">.</span>
+
+        </a>
+
+
+        <p>
+            Designed & built by Abel Alen Siso
+        </p>
+
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/abdrummer"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a href="mailto:joasadayabel@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © <span id="current-year"></span>
+        Abel Alen Siso. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button id="back-to-top"
+        class="back-to-top"
+        aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
