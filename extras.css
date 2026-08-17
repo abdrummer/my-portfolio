@@ -1,0 +1,28 @@
+/* Small helpers: mobile menu and theme icons */
+
+/* Ensure body can't scroll when mobile menu open */
+body.no-scroll { overflow: hidden; }
+
+/* Make menu-toggle visible on small screens and style mobile nav */
+@media (max-width: 760px) {
+  .menu-toggle { display: inline-flex; }
+  .nav-menu { display: none; flex-direction: column; gap: 0; padding: 8px 12px; }
+  .nav-menu.open {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--card);
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border);
+    z-index: 998;
+    gap: 6px;
+    align-items: stretch;
+  }
+  .nav-link { padding: 10px 14px; width: 100%; }
+}
+
+/* Theme icon colors */
+.icon-button i.fa-sun { color: #f6d365; }
+.icon-button i.fa-moon { color: #c7d2fe; }
